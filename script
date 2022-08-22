@@ -1,0 +1,13 @@
+if (running == null) {
+	var running = null; console.log("Program Loading...");
+	var iframe = document.getElementById("stageFrame");
+	for (i = 0; i < 1; i++) {
+		setInterval(function() {
+			if (running == null) { running = true; console.log('Program Loaded! Enjoy!') }
+			if (iframe.contentWindow.document.getElementsByClassName('FrameRight') != null) { iframe.contentWindow.document.getElementsByClassName('FrameRight')[0].onclick(); }
+			if (iframe.contentWindow.document.getElementById("invis-o-div") != null) { iframe.contentWindow.document.getElementById("invis-o-div").remove(); }
+		},1000);
+	}
+} else {
+	console.log("Program already running!")
+}
