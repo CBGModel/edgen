@@ -8,7 +8,7 @@ go to console
 
 paste the script into the console and press enter
 
-
+------------------------------------------------------------------------
 
 go to tweaks menu
 
