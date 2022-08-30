@@ -1,24 +1,14 @@
 // ==UserScript==
 // @name         EdgenTweaks
-// @namespace    https://gradyn.com/
-// @version      1.5
+// @namespace    Model
+// @version      1.1
 // @description  Adds tweaks to edgenuity
-// @author       Gradyn Wursten
+// @author       Ethan Saligumba
 // @match        *://*.core.learn.edgenuity.com/*
 // @grant        none
 // ==/UserScript==
-//TODO
-//check if a  tweak can be enbled based on info before running it (get rid of if statements in methods)
-//fix tweak button not closing all panes (use overlay properly)
-//$("iframe#stageFrame").contents().find("iframe").contents().find("div > p").text()
 
 
-//changes
-// FIX stealth mode & search hotkeys
-//Auto submit for electives
-// fix search selection for tests
-// Fix guess practice guessing too much
-// Changed skip intro hotkey to CTRL+SHIFT+M
 
 var $, jQuery;
 $ = jQuery = window.jQuery;
@@ -402,7 +392,7 @@ setTimeout( //2 sec delay to load before trying to run
         window.shortcutinfo = document.createElement("p")
         window.shortcutinfo.innerHTML = "<br> <b> HOTKEYS </b> <br> CTRL+SHFT+A = Auto Advance Toggle <br> CTRL+SHIFT+H = Stealth Mode Toggle <br> CTRL+SHIFT+G = Guess Practice toggler <br> CTRL+SHIFT+S = Search Selection <br> CTRL+SHIFT+P = Foward +O = Back <br> CTRL+SHIFT+V = AutoComplete Vocab Toggle <br> CTRL+SHIFT+E = Show Example Response toggle <br> CTRL+SHIFT+B = Skip Intro toggle"
         window.copyright = document.createElement("p")
-        window.copyright.innerHTML = "EdgenTweaks Version 1.4.6 orginally by Gradyn Wursten (<a href='https://gitlab.com/roglemorph/edgentweaks/-/issues/'>Report a bug!</a>) (<a href='https://host.gradyn.com/edgentweaks/support.html'>Support the project!</a>)  (<a href='https://gitlab.com/roglemorph/edgentweaks'>Gitlab</a>) <br> This is free and unencumbered software released into the public domain.Anyone is free to copy, modify, publish, use, compile, sell, or distribute this software, either in source code form or as a compiled binary, for any purpose, commercial or non-commercial, and by any means."
+        window.copyright.innerHTML = "EdgenTweaks Version 1.1 originally by Ethan Saligumba <br> This is free and unencumbered software released into the public domain.Anyone is free to copy, modify, publish, use, compile, sell, or distribute this software, either in source code form or as a compiled binary, for any purpose, commercial or non-commercial, and by any means."
 
         window.copyright.style.color = "gray"
         window.copyright.style.width = "100%"
